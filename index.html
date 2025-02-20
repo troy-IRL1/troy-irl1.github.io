@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troy De Perio - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+            background-color: #222;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: gray;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background: #222;
+            color: white;
+        }
+
+        /* Responsive Navbar Fix */
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav a {
+                font-size: 14px;
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Troy De Perio</h1>
+    </header>
+
+    <nav>
+        <a href="#">About</a>
+        <a href="#">Experience</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Hi, I'm Troy De Perio</h2>
+        <p>Account Manager | Sales & Customer Relations Expert</p>
+        <button onclick="downloadResume()">Download Resume</button>
+    </div>
+
+    <footer>
+        <p>Contact: +63 961 771 9631 | <a href="mailto:deperiotroy@gmail.com" style="color:white;">deperiotroy@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/troy-deperio" target="_blank" style="color:white;">LinkedIn</a></p>
+    </footer>
+
+    <script>
+        function downloadResume() {
+            alert("Resume download will be available soon!");
+        }
+    </script>
+</body>
+</html>
