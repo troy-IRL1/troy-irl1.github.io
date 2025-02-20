@@ -12,12 +12,12 @@
             font-family: Arial, sans-serif;
         }
         body {
-            background-color: #f4f4f4;
+            background: url('https://source.unsplash.com/1600x900/?web3,technology') no-repeat center center/cover;
+            color: white;
             text-align: center;
         }
         header {
-            background-color: #222;
-            color: white;
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 15px 0;
         }
         nav {
@@ -25,52 +25,47 @@
             justify-content: center;
             gap: 20px;
             padding: 10px 0;
-            background-color: #222;
+            background-color: rgba(0, 0, 0, 0.8);
         }
         nav a {
             color: white;
             text-decoration: none;
             font-size: 18px;
+            transition: color 0.3s;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: cyan;
         }
         .container {
             margin: 40px auto;
             max-width: 800px;
             padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
             border-radius: 10px;
         }
         button {
-            background-color: black;
-            color: white;
+            background-color: cyan;
+            color: black;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: transform 0.2s;
         }
         button:hover {
-            background-color: gray;
+            transform: scale(1.1);
+        }
+        .experience {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
         }
         footer {
             margin-top: 40px;
             padding: 10px;
-            background: #222;
-            color: white;
-        }
-
-        /* Responsive Navbar Fix */
-        @media (max-width: 768px) {
-            nav {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            nav a {
-                font-size: 14px;
-                margin: 5px 10px;
-            }
+            background: rgba(0, 0, 0, 0.8);
         }
     </style>
 </head>
@@ -80,26 +75,33 @@
     </header>
 
     <nav>
-        <a href="#">About</a>
-        <a href="#">Experience</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <div class="container">
+    <div class="container" id="about">
         <h2>Hi, I'm Troy De Perio</h2>
         <p>Account Manager | Sales & Customer Relations Expert</p>
-        <button onclick="downloadResume()">Download Resume</button>
+        <button onclick="showMessage()">Click Me</button>
     </div>
 
-    <footer>
+    <div class="experience" id="experience">
+        <h2>Experience</h2>
+        <p><strong>Customer Experience Representative</strong> - Shred-it/Stericycle</p>
+        <p>Handled customer inquiries, managed order tracking, and provided solutions to clients.</p>
+        <p><strong>Subject Matter Expert</strong> - Shred-it/Stericycle</p>
+        <p>Trained and mentored team members, provided advanced troubleshooting, and optimized workflows.</p>
+    </div>
+
+    <footer id="contact">
         <p>Contact: +63 961 771 9631 | <a href="mailto:deperiotroy@gmail.com" style="color:white;">deperiotroy@gmail.com</a></p>
         <p><a href="https://www.linkedin.com/in/troy-deperio" target="_blank" style="color:white;">LinkedIn</a></p>
     </footer>
 
     <script>
-        function downloadResume() {
-            alert("Resume download will be available soon!");
+        function showMessage() {
+            alert("Hello! Welcome to my portfolio website.");
         }
     </script>
 </body>
